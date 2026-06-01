@@ -71,9 +71,3 @@ cd CodeTrack
 3. Run using Live Server or open `index.html` in your browser.
 
 
-
-
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a star ⭐ on GitHub.
