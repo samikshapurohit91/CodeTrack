@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeTrack Pro</title>
+
+    <link rel="stylesheet" href="cpt.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🏆 CodeTrack 
+        </div>
+
+        <div class="nav-actions">
+
+            <button id="themeBtn">
+                🌙
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>
+            Coding Profile Tracker
+        </h1>
+
+        <p>
+            Track Codeforces statistics, ratings, contests and performance
+        </p>
+
+    </section>
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="usernameInput"
+                placeholder="Enter Codeforces Username">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- PROFILE -->
+
+    <section id="profileSection">
+
+        <div class="profile-card">
+
+            <img
+                id="profileImage"
+                src="https://via.placeholder.com/150"
+                alt="profile">
+
+            <h2 id="profileName">
+                User Name
+            </h2>
+
+            <p id="profileRank">
+                Rank
+            </p>
+
+            <a
+                id="profileLink"
+                href="#"
+                target="_blank">
+
+                View Profile
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <h3 id="rating">
+                0
+            </h3>
+            <p>Current Rating</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="maxRating">
+                0
+            </h3>
+            <p>Max Rating</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="contribution">
+                0
+            </h3>
+            <p>Contribution</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="friendCount">
+                0
+            </h3>
+            <p>Friends</p>
+        </div>
+
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                🏅 Achievement Level
+            </h2>
+
+        </div>
+
+        <div id="achievementCard">
+
+            Search a profile to see achievements
+
+        </div>
+
+    </section>
+
+    <!-- RATING CHART -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                📈 Rating History
+            </h2>
+
+        </div>
+
+        <canvas id="ratingChart"></canvas>
+
+    </section>
+
+    <!-- SEARCH HISTORY -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                🕒 Search History
+            </h2>
+
+        </div>
+
+        <div id="historyContainer">
+
+        </div>
+
+    </section>
+
+    <!-- FAVORITES -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>
+                ❤️ Favorite Profiles
+            </h2>
+
+        </div>
+
+        <div id="favoritesContainer">
+
+        </div>
+
+    </section>
+
+    <!-- ACTIONS -->
+
+    <section class="actions">
+
+        <button id="saveFavoriteBtn">
+
+            ❤️ Save Favorite
+
+        </button>
+
+        <button id="downloadBtn">
+
+            📄 Download Report
+
+        </button>
+
+        <button id="clearHistoryBtn">
+
+            🗑 Clear History
+
+        </button>
+
+    </section>
+
+    <!-- LOADER -->
+
+    <div id="loader">
+
+        Loading...
+
+    </div>
+
+    <!-- TOAST -->
+
+    <div id="toast">
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Built with ❤️ using HTML, CSS, JavaScript & Codeforces API
+        </p>
+
+    </footer>
+
+    <script src="cpt.js"></script>
+
+</body>
+
+</html>
